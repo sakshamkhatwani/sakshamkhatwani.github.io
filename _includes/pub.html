@@ -1,0 +1,27 @@
+{% assign p = include.pub %}
+<li class="pub" id="{{ p.id }}">
+  {% if p.image %}<img class="pub-thumb" src="{{ p.image | relative_url }}" alt="" loading="lazy">{% endif %}
+  <div class="pub-body">
+    <div class="pub-title">{% if p.url %}<a href="{{ p.url }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</div>
+    <div class="pub-authors">
+      {% for author in p.authors %}{% if author contains site.highlight_name %}<strong>{{ author }}</strong>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
+    </div>
+    <div class="pub-venue">
+      <em>{{ p.venue }}</em>{% if p.venue_short %} ({{ p.venue_short }}){% endif %}, {{ p.year }}
+      {% if p.award %}<span class="badge award"><i class="fa-solid fa-trophy"></i> {{ p.award }}</span>{% endif %}
+      {% if p.status %}<span class="badge">{{ p.status }}</span>{% endif %}
+    </div>
+    <div class="pub-links">
+      {% if p.pdf %}<a href="{{ p.pdf | relative_url }}">PDF</a>{% endif %}
+      {% if p.arxiv %}<a href="https://arxiv.org/abs/{{ p.arxiv }}">arXiv</a>{% endif %}
+      {% if p.code %}<a href="{{ p.code }}">Code</a>{% endif %}
+      {% if p.slides %}<a href="{{ p.slides | relative_url }}">Slides</a>{% endif %}
+      {% if p.video %}<a href="{{ p.video }}">Video</a>{% endif %}
+      {% if p.project %}<a href="{{ p.project }}">Project</a>{% endif %}
+      {% if p.bibtex %}<button class="bib-toggle" type="button" aria-expanded="false">BibTeX</button>{% endif %}
+    </div>
+    {% if p.bibtex %}
+    <pre class="bibtex" hidden><button class="copy-bib" type="button">Copy</button><code>{{ p.bibtex | strip | xml_escape }}</code></pre>
+    {% endif %}
+  </div>
+</li>

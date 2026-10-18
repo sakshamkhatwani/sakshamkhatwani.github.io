@@ -1,0 +1,65 @@
+# Publications, newest first. Fields other than id/title/authors/venue/year are optional.
+# Set `selected: true` to show it on the home page.
+# `type` groups the publications page: conference | journal | workshop | preprint
+
+- id: smith2026efficient
+  title: "Efficient Sparse Attention for Long-Context Language Models"
+  authors: ["Your Name", "Coauthor One", "Coauthor Two", "Prof. Advisor Name"]
+  venue: "International Conference on Learning Representations"
+  venue_short: "ICLR"
+  year: 2026
+  type: conference
+  selected: true
+  award: "Oral"
+  arxiv: "2601.00001"
+  pdf: "/assets/files/papers/efficient-sparse-attention.pdf"
+  code: "https://github.com/username/sparse-attn"
+  project: ""
+  image: "/assets/img/pubs/placeholder.svg"
+  bibtex: |
+    @inproceedings{name2026efficient,
+      title     = {Efficient Sparse Attention for Long-Context Language Models},
+      author    = {Name, Your and One, Coauthor and Two, Coauthor and Name, Advisor},
+      booktitle = {International Conference on Learning Representations (ICLR)},
+      year      = {2026}
+    }
+
+- id: name2025verified
+  title: "Verified Compilation of Probabilistic Programs"
+  authors: ["Coauthor Three*", "Your Name*", "Prof. Advisor Name"]
+  venue: "ACM SIGPLAN Conference on Programming Language Design and Implementation"
+  venue_short: "PLDI"
+  year: 2025
+  type: conference
+  selected: true
+  award: "Distinguished Paper Award"
+  pdf: "/assets/files/papers/verified-compilation.pdf"
+  code: "https://github.com/username/vcpp"
+  slides: "/assets/files/slides/pldi25.pdf"
+  video: "https://youtube.com/watch?v=XXXX"
+  image: "/assets/img/pubs/placeholder.svg"
+  bibtex: |
+    @inproceedings{three2025verified,
+      title     = {Verified Compilation of Probabilistic Programs},
+      author    = {Three, Coauthor and Name, Your and Name, Advisor},
+      booktitle = {Proceedings of PLDI},
+      year      = {2025}
+    }
+
+- id: name2025benchmark
+  title: "A Benchmark for Robustness in Distributed Training"
+  authors: ["Your Name", "Coauthor Four"]
+  venue: "Workshop on Systems for ML at NeurIPS"
+  venue_short: "MLSys Workshop"
+  year: 2025
+  type: workshop
+  pdf: "/assets/files/papers/benchmark.pdf"
+
+- id: name2026preprint
+  title: "Scaling Laws for Program Synthesis"
+  authors: ["Your Name", "Coauthor One", "Prof. Advisor Name"]
+  venue: "arXiv preprint"
+  year: 2026
+  type: preprint
+  status: "Under review"
+  arxiv: "2605.00002"

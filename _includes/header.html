@@ -1,0 +1,15 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="site-title" href="{{ '/' | relative_url }}">{{ site.author.name }}</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+    <nav class="site-nav">
+      {% for item in site.nav %}
+        {% assign active = false %}
+        {% if item.url == "/" and page.url == "/" %}{% assign active = true %}
+        {% elsif item.url != "/" and page.url contains item.url %}{% assign active = true %}{% endif %}
+        <a href="{{ item.url | relative_url }}"{% if active %} class="active" aria-current="page"{% endif %}>{{ item.title }}</a>
+      {% endfor %}
+      <button class="theme-toggle" aria-label="Toggle dark mode"><i class="fa-solid fa-circle-half-stroke"></i></button>
+    </nav>
+  </div>
+</header>

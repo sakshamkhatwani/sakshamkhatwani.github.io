@@ -1,0 +1,11 @@
+# Newest first. Markdown is allowed in `text`.
+- date: 2026-09-15
+  text: "Started a research internship at **Example Research Lab** working on efficient inference."
+- date: 2026-01-22
+  text: "Our paper on [sparse attention](/publications/#smith2026efficient) was accepted to **ICLR 2026** as an oral!"
+- date: 2025-06-18
+  text: "Presented our work at **PLDI 2025** in Seoul — it received a Distinguished Paper Award 🏆"
+- date: 2025-04-01
+  text: "Awarded the *Example Graduate Fellowship*."
+- date: 2024-09-01
+  text: "Started my PhD at Your University, advised by Prof. Advisor Name."

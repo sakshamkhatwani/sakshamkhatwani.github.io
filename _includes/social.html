@@ -1,0 +1,13 @@
+{% assign s = site.social %}
+<ul class="social">
+  {% if s.google_scholar != "" %}<li><a href="{{ s.google_scholar }}" title="Google Scholar"><i class="ai ai-google-scholar"></i></a></li>{% endif %}
+  {% if s.github != "" %}<li><a href="{{ s.github }}" title="GitHub"><i class="fa-brands fa-github"></i></a></li>{% endif %}
+  {% if s.dblp != "" %}<li><a href="{{ s.dblp }}" title="DBLP"><i class="ai ai-dblp"></i></a></li>{% endif %}
+  {% if s.semantic_scholar != "" %}<li><a href="{{ s.semantic_scholar }}" title="Semantic Scholar"><i class="ai ai-semantic-scholar"></i></a></li>{% endif %}
+  {% if s.orcid != "" %}<li><a href="{{ s.orcid }}" title="ORCID"><i class="ai ai-orcid"></i></a></li>{% endif %}
+  {% if s.linkedin != "" %}<li><a href="{{ s.linkedin }}" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>{% endif %}
+  {% if s.twitter != "" %}<li><a href="{{ s.twitter }}" title="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a></li>{% endif %}
+  {% if s.bluesky != "" %}<li><a href="{{ s.bluesky }}" title="Bluesky"><i class="fa-brands fa-bluesky"></i></a></li>{% endif %}
+  {% if site.author.cv_pdf != "" %}<li><a href="{{ site.author.cv_pdf | relative_url }}" title="CV (PDF)"><i class="ai ai-cv"></i></a></li>{% endif %}
+  <li><a href="{{ '/feed.xml' | relative_url }}" title="RSS"><i class="fa-solid fa-rss"></i></a></li>
+</ul>

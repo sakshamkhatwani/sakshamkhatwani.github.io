@@ -1,0 +1,19 @@
+# Research projects and open-source software.
+- title: "sparse-attn"
+  description: "A PyTorch library for block-sparse attention kernels, with Triton implementations that run 3× faster than dense attention at 128k context."
+  tags: ["Python", "CUDA", "Triton"]
+  github: "https://github.com/username/sparse-attn"
+  paper: "/publications/#smith2026efficient"
+  image: "/assets/img/pubs/placeholder.svg"
+
+- title: "VCPP — Verified Compiler for Probabilistic Programs"
+  description: "A compiler from a small probabilistic language to C, mechanically verified in Coq."
+  tags: ["Coq", "OCaml", "PL"]
+  github: "https://github.com/username/vcpp"
+  paper: "/publications/#name2025verified"
+  image: "/assets/img/pubs/placeholder.svg"
+
+- title: "dist-bench"
+  description: "Fault-injection benchmark suite for distributed deep learning training jobs."
+  tags: ["Systems", "Kubernetes"]
+  github: "https://github.com/username/dist-bench"

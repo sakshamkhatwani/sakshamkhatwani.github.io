@@ -1,0 +1,71 @@
+# ---------------------------------------------------------------
+#  Site settings — edit these first
+# ---------------------------------------------------------------
+title: "Your Name"
+description: "PhD student in Computer Science working on machine learning systems."
+url: "https://username.github.io"   # your GitHub Pages URL
+baseurl: ""                          # "" for username.github.io, "/repo-name" for a project site
+
+author:
+  name: "Your Name"
+  pronouns: "they/them"              # optional, leave "" to hide
+  position: "PhD Student"
+  affiliation: "Department of Computer Science"
+  institution: "Your University"
+  institution_url: "https://www.example.edu"
+  advisor: "Prof. Advisor Name"       # optional
+  advisor_url: "https://example.edu/~advisor"
+  email: "you [at] example [dot] edu" # obfuscated on purpose
+  photo: "/assets/img/profile.svg"    # replace with profile.jpg
+  cv_pdf: "/assets/files/cv.pdf"      # drop your CV PDF here
+
+# Leave any of these blank to hide the icon
+social:
+  google_scholar: "https://scholar.google.com/citations?user=XXXXXXX"
+  github: "https://github.com/username"
+  dblp: ""
+  orcid: ""
+  semantic_scholar: ""
+  linkedin: ""
+  twitter: ""
+  bluesky: ""
+
+# Your name as it appears in author lists — it gets bolded automatically
+highlight_name: "Your Name"
+
+# Navigation (order matters)
+nav:
+  - title: About
+    url: /
+  - title: Publications
+    url: /publications/
+  - title: Projects
+    url: /projects/
+  - title: Teaching
+    url: /teaching/
+  - title: Blog
+    url: /blog/
+  - title: CV
+    url: /cv/
+
+# Optional: Google Analytics 4 ID, e.g. "G-XXXXXXX"
+google_analytics: ""
+
+# ---------------------------------------------------------------
+#  Build settings (GitHub Pages compatible — no custom plugins)
+# ---------------------------------------------------------------
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+permalink: /blog/:year/:title/
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

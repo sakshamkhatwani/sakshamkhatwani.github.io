@@ -1,0 +1,9 @@
+---
+layout: default
+---
+<article class="page post">
+  <h1 class="page-title">{{ page.title }}</h1>
+  <p class="post-meta">{{ page.date | date: "%B %-d, %Y" }}{% if page.tags %} · {{ page.tags | join: ", " }}{% endif %}</p>
+  {{ content }}
+  <p class="back"><a href="{{ '/blog/' | relative_url }}">← All posts</a></p>
+</article>
